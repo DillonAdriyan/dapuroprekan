@@ -2,20 +2,17 @@
 window.onscroll = function() {
   const header = document.querySelector('#header');
   const fixedNav = header.offsetTop;
-  const toTop = document.querySelector('#to-top');
+  const klikWa = document.querySelector('#klik-wa');
   const navMenu = document.querySelector('#nav-menu');
-  
-
   if (window.pageYOffset > fixedNav) {
     header.classList.add('navbar-fixed');
- 
-    toTop.classList.remove('hidden');
-    toTop.classList.add('flex');
+    klikWa.classList.remove('hidden');
+    klikWa.classList.add('flex');
 
   } else {
     header.classList.remove('navbar-fixed');
-    toTop.classList.remove('flex');
-    toTop.classList.add('hidden');
+    klikWa.classList.remove('flex');
+    klikWa.classList.add('hidden');
   }
 };
 
